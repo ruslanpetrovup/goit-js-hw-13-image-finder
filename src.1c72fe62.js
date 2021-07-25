@@ -14,4 +14,4 @@ var t=arguments[3],e="Expected a function",n=NaN,r="[object Symbol]",i=/^\s+|\s+
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=t(require("./apiService"));function t(e){return e&&e.__esModule?e:{default:e}}const n=document.querySelector('input[name="query"]'),r=document.querySelector(".gallery"),i=document.querySelector(".btn-images");var d=require("lodash.debounce");let s=1;const u=r.children,a=({target:t})=>{if(""===t.value)return r.innerHTML="",i.classList.add("hidden"),void(s=1);s=1,r.innerHTML="",i.classList.remove("hidden"),(0,e.default)(t.value,1).then(e=>{r.insertAdjacentHTML("beforeend",e)})},l=()=>{s+=1;let t=u.length;(0,e.default)(n.value,s).then(e=>{r.insertAdjacentHTML("beforeend",e),setTimeout(()=>{u[t].scrollIntoView({behavior:"smooth",block:"end"})},1e3)})};i.addEventListener("click",l),n.addEventListener("input",d(a,500));
 },{"./sass/main.scss":"clu1","./apiService":"WgT8","lodash.debounce":"PZFh"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.cda7e386.js.map
+//# sourceMappingURL=/goit-js-hw-13-image-finder/src.1c72fe62.js.map
