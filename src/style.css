@@ -1,0 +1,40 @@
+body {
+  background-color: #34495e;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.search-form {
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  width: calc((100% - 120px) / 2);
+}
+.item:nth-child(2n) {
+  margin-left: 100px;
+}
+img {
+  border: 1px solid white;
+  width: 100%;
+}
+span {
+  color: #6bb9f0;
+}
+.btn-images {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 1;
+  transition: opacity linear;
+}
+.btn-images.hidden {
+  opacity: 0;
+}
